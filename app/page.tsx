@@ -26,7 +26,7 @@ const Home = async () => {
         
         return (
             <section className='flexStart flex-col paddings'>
-                Categories
+                
                 <p className='no-result-text text-center'>
                     No projects found.
                 </p>
@@ -36,7 +36,7 @@ const Home = async () => {
     }
     return (
        <section className="flex-start flex-col paddings mb-16">
-        Categories
+        
         <section className='projects-grid'>
             {projectsToDisplay.map(({node}: {node : ProjectInterface}) => (
                 <ProjectCard 
@@ -51,7 +51,7 @@ const Home = async () => {
             ))}
         
         </section>
-        LoadMore
+        
        </section>
     )
 }
